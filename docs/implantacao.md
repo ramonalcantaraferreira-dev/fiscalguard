@@ -52,7 +52,7 @@ Inclua o domínio do frontend em `CORS_ORIGINS` da API.
 | Variável | Obrigatória | Descrição |
 |---|---|---|
 | `ENVIRONMENT` | sim | `development`, `staging`, `production`, `test` |
-| `DATABASE_URL` | sim | `postgresql+psycopg://…` — o usuário precisa poder executar `SET ROLE authenticated` (o `postgres` do Supabase pode) |
+| `DATABASE_URL` | sim | `postgresql+psycopg://…` do **Session pooler** do Supabase (não use o Transaction pooler); o usuário precisa poder executar `SET ROLE authenticated` (o `postgres` do Supabase pode) |
 | `SUPABASE_URL` | sim* | Usada para JWKS (chaves assimétricas) e Storage |
 | `SUPABASE_JWT_SECRET` | sim* | Segredo HS256 (projetos com chave JWT legada) |
 | `SUPABASE_JWT_AUDIENCE` | não | Padrão `authenticated` |
