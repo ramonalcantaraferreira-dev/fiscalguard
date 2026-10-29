@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.local
+.storage/
+node_modules/
+.next/
+out/
+coverage/
+*.log
+.DS_Store
+*.tsbuildinfo

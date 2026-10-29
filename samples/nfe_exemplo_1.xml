@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35261098765432000198550010000015011000015019" versao="4.00">
+      <ide><cUF>35</cUF><natOp>VENDA</natOp><mod>55</mod><serie>1</serie><nNF>1501</nNF>
+        <dhEmi>2026-10-15T10:00:00-03:00</dhEmi><tpNF>1</tpNF></ide>
+      <emit><CNPJ>98765432000198</CNPJ><xNome>Metalúrgica Paulista Ltda</xNome>
+        <enderEmit><UF>SP</UF></enderEmit><CRT>3</CRT></emit>
+      <dest><CNPJ>12345678000195</CNPJ><xNome>Cliente Destinatário SA</xNome>
+        <enderDest><UF>SP</UF></enderDest></dest>
+      
+      <det nItem="1">
+        <prod><cProd>P1</cProd><cEAN>SEM GTIN</cEAN><xProd>Chapa de aço laminado</xProd>
+          <NCM>84713012</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>1.0000</qCom>
+          <vUnCom>12500.00</vUnCom><vProd>12500.00</vProd></prod>
+        <imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>12500.00</vBC><pICMS>18.00</pICMS><vICMS>2250.00</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>50</CST><vBC>12500.00</vBC><pIPI>10.00</pIPI><vIPI>625.00</vIPI></IPITrib></IPI>
+          <PIS><PISAliq><CST>01</CST><vBC>12500.00</vBC><pPIS>1.65</pPIS><vPIS>206.25</vPIS></PISAliq></PIS>
+          <COFINS><COFINSAliq><CST>01</CST><vBC>12500.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>950.00</vCOFINS></COFINSAliq></COFINS>
+        </imposto>
+      </det>
+      <det nItem="2">
+        <prod><cProd>P2</cProd><cEAN>SEM GTIN</cEAN><xProd>Parafusos sextavados</xProd>
+          <NCM>84713012</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>1.0000</qCom>
+          <vUnCom>3200.00</vUnCom><vProd>3200.00</vProd></prod>
+        <imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>3200.00</vBC><pICMS>18.00</pICMS><vICMS>576.00</vICMS></ICMS00></ICMS>
+          <PIS><PISAliq><CST>01</CST><vBC>3200.00</vBC><pPIS>1.65</pPIS><vPIS>52.80</vPIS></PISAliq></PIS>
+          <COFINS><COFINSAliq><CST>01</CST><vBC>3200.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>243.20</vCOFINS></COFINSAliq></COFINS>
+        </imposto>
+      </det>
+      <det nItem="3">
+        <prod><cProd>P3</cProd><cEAN>SEM GTIN</cEAN><xProd>Óleo lubrificante (monofásico)</xProd>
+          <NCM>84713012</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>1.0000</qCom>
+          <vUnCom>800.00</vUnCom><vProd>800.00</vProd></prod>
+        <imposto><ICMS><ICMS40><orig>0</orig><CST>40</CST></ICMS40></ICMS>
+          <PIS><PISAliq><CST>04</CST><vBC>800.00</vBC><pPIS>1.65</pPIS><vPIS>13.20</vPIS></PISAliq></PIS>
+          <COFINS><COFINSAliq><CST>04</CST><vBC>800.00</vBC><pCOFINS>7.60</pCOFINS><vCOFINS>60.80</vCOFINS></COFINSAliq></COFINS>
+        </imposto>
+      </det>
+      <total><ICMSTot><vBC>16500.00</vBC><vICMS>2826.00</vICMS><vST>0.00</vST><vProd>16500.00</vProd>
+        <vDesc>0.00</vDesc><vIPI>625.00</vIPI><vPIS>0</vPIS><vCOFINS>0</vCOFINS><vNF>17125.00</vNF></ICMSTot></total>
+    </infNFe>
+  </NFe>
+  <protNFe versao="4.00"><infProt><tpAmb>1</tpAmb><chNFe>35261098765432000198550010000015011000015019</chNFe><nProt>1352600000001501</nProt><cStat>100</cStat></infProt></protNFe>
+</nfeProc>

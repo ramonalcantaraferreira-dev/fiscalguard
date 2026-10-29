@@ -1,0 +1,31 @@
+# Blueprint Render: API FastAPI + worker da fila de importações.
+# Variáveis marcadas com sync: false devem ser preenchidas no painel (nunca versionadas).
+services:
+  - type: web
+    name: fiscalguard-api
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars: &env
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STORAGE_BACKEND
+        value: supabase
+      - key: CORS_ORIGINS
+        sync: false
+  - type: worker
+    name: fiscalguard-worker
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: .
+    dockerCommand: python -m app.cli worker
+    envVars: *env
